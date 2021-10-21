@@ -1,27 +1,13 @@
-const generateRandomNumber = () => {
-    const num = Math.floor(Math.random() * 4)
-    return num
+let first = ['dad', 'uncle', 'brother', 'grandpa', 'hero']
+let second = ['happy', 'sad', 'excited', 'worried', 'anxious']
+let third = ['won the lottery', 'just ate dinner', 'is going to a club', 'is going to the gym', 'broke up with his girlfriend']
+
+
+const generateMessage = () => {
+    let person = first[Math.floor(Math.random() * first.length)]
+    let emotion = second[Math.floor(Math.random() * second.length)] 
+    let action = third[Math.floor(Math.random() * third.length)]
+    console.log (`Your ${person} is really ${emotion} because he ${action}.`)
 };
 
-const randomQuote = () => {
-    switch(generateRandomNumber()) {
-        case 0:
-            console.log('"The day you becom esuccessful is th day you become humble -Naveen Jane"')
-            break;
-        case 1:
-            console.log('"A masterpiece is still a masterpiece even when the lights are off and the room is empty" -Unkown')
-            break;
-        case 2:
-            console.log('"The cost of procrastination is a life you could\'ve lived" -Unknown')
-            break;
-        case 3: 
-            console.log('"People don\'t care what you know unitll they know that you care" -Kevion')
-            break;
-        default:
-            console.log('Please select a random number.')
-    }
-
-
-};
-
-randomQuote()
+generateMessage()
