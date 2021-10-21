@@ -1,7 +1,7 @@
 # mixed-messages
 Codecademy Mixed Messages Project
 
-Very simple, less than 20 lines 
+Creates a random message for the user each time the program is ran. Made this program for learning purposes. 
 
 ## **Tech**
 Javascript
